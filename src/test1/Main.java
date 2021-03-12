@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Main {
 	public static void main(String[] args){
 		
-		Turritopsis med1 = new Turritopsis(5,500,"Torritopsis nutriculae");
+		Turritopsis med1 = new Turritopsis("nutriculae",5,500,"Turritopsis","bleue");
 		
 		
 		Chien médor = new Chien("Médor",195,12,"matin de naple");
@@ -28,6 +28,7 @@ public class Main {
 		
 		
 		
+		
 		Classes btssio = new Classes();
 		btssio.ajouteretudiant(anthony);
 		btssio.ajouteretudiant(antony);
@@ -36,8 +37,8 @@ public class Main {
 		btssio.getEtudiant(0);
 		
 		
-		int[] tab1 = new int[5]; //tableau classique
-		int[] tab2 = {1,2,3,4,5,6}; //tableau pas bien
+		//int[] tab1 = new int[5]; //tableau classique
+		//int[] tab2 = {1,2,3,4,5,6}; //tableau pas bien
 		
 		
 		List <Chien> chenil = new ArrayList<Chien>();// tableau facon objet

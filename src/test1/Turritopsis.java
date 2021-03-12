@@ -1,53 +1,40 @@
 package test1;
 
-public class Turritopsis {
-	private int taille;
-	private int age;
-	private String race;
+public class Turritopsis extends Animal{
 	
-	public Turritopsis(int p_taille,int p_age,String p_race)
+	private String couleur;
+	
+	public Turritopsis(String nom, int taille, int age, String race,String couleur)
 	{
-		taille = p_taille;
-		age = p_age;
-		race = p_race;
+		super(nom, taille, age, race);
+		this.couleur = couleur;
 	}
 	
+	
+
 	public void sePresenter()
 	{
 		System.out.println("je suis immortel je fait " + taille + " mm, j'ai " + age + " ans et je suis un " + race + " .");
 	}
 	
-	
 	public String toString()
 	{
-		return "je suis éternel je fait " + taille + " mm, j'ai " + age + " ans et je suis un " + race + " !";
+		return "je suis éternel je fait " + taille + " mm, j'ai " + age + " ans et je suis un " + race +" "+ nom + " " + couleur +  " !";
 	}
+	
+	public String regen()
+	{
+		return "reconstitution des cellules en cours . . .";
+	}
+	
+
 	
 	
 	
-	
-	
-	public int getTaille() {
-		return taille;
+	public String getCouleur() {
+		return couleur;
 	}
-
-	public void setTaille(int taille) {
-		this.taille = taille;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getRace() {
-		return race;
-	}
-
-	public void setRace(String race) {
-		this.race = race;
+	public void setCouleur(String couleur) {
+		this.couleur = couleur;
 	}
 }

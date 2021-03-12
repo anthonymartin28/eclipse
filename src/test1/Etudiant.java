@@ -14,6 +14,7 @@ public class Etudiant {
 	
 	Chien médor = new Chien("Médor",195,12,"matin de naple");
 	Chien max = new Chien("max",4,1,"chiwawa");
+	
 	private List <Chien> leschiens;
 	
 	private List <Turritopsis> lesmed;
@@ -40,6 +41,7 @@ public class Etudiant {
 		{
 			System.out.println(lesmed.get(i));
 		}
+		
 	}
 	
 	public String toString()
@@ -63,6 +65,8 @@ public class Etudiant {
 	{
 		leschiens.remove(index);
 	}
+	
+	
 	
 	
 	
