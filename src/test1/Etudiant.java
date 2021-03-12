@@ -10,14 +10,9 @@ public class Etudiant {
 	private String prenom;
 	private int age;
 	private String classe;
-	private Chien chien1;
-	
-	Chien médor = new Chien("Médor",195,12,"matin de naple");
-	Chien max = new Chien("max",4,1,"chiwawa");
-	
-	private List <Chien> leschiens;
-	
-	private List <Turritopsis> lesmed;
+
+	private List<Animal> animaux;
+
 	
 	public Etudiant(String p_nom,String p_prenom,int p_age,String p_classe)
 	{
@@ -25,46 +20,49 @@ public class Etudiant {
 		prenom = p_prenom;
 		age = p_age;
 		classe = p_classe;
-		leschiens = new ArrayList<Chien>();
-		lesmed = new ArrayList<Turritopsis>();
+		animaux = new ArrayList<Animal>();
+
+		
 	}
 	
 	public void sePresenter()
 	{
-		System.out.println("Je suis " + nom + " " + prenom + " j'ai " + age + " ans, je suis en " + classe + ", et j'ai " + leschiens.size() + " chien(s).");
-		for (int i=0;i < leschiens.size(); i++)
+		System.out.println("Je suis " + nom + " " + prenom + " j'ai " + age + " ans, je suis en " + classe + "et j'ai " +animaux.size() + " animaux :");
+		for (int i=0;i < animaux.size(); i++)
 		{
-			System.out.println(leschiens.get(i));
-		}
-		
-		for (int i=0;i < lesmed.size(); i++)
-		{
-			System.out.println(lesmed.get(i));
+			System.out.println(animaux.get(i));
 		}
 		
 	}
+	
+	
+	
 	
 	public String toString()
 	{
-		return "Je suis " + nom + " " + prenom + " j'ai " + age + " ans, je suis en " + classe + ", et j'ai " + leschiens.size() + " chien(s).";
+		return "Je suis " + nom + " " + prenom + " j'ai " + age + " ans, je suis en " + classe + " .";
 		
 	}
 	
-	public void ajoutermed(Turritopsis p_Turritopsis)
+	
+	
+	
+	
+	public void addanimal(Animal anim)
 	{
-		lesmed.add(p_Turritopsis);
+		animaux.add(anim);
+	}
+	
+	public void dellanimal(int index)
+	{
+		animaux.remove(index);
 	}
 	
 	
-	public void ajouterchien(Chien p_Chien)
-	{
-		leschiens.add(p_Chien);
-	}
 	
-	public void retirerchien(int index)
-	{
-		leschiens.remove(index);
-	}
+	
+	
+	
 	
 	
 	
@@ -108,15 +106,5 @@ public class Etudiant {
 
 	public void setClasse(String classe) {
 		this.classe = classe;
-	}
-
-	
-	
-	public Chien getChien() {
-		return chien1;
-	}
-
-	public void setChien(Chien chien1) {
-		this.chien1 = chien1;
 	}
 }

@@ -1,9 +1,7 @@
 package test1;
 
-public class Chien extends Animal{
-
-	
-	public Chien(String nom, int taille, int age, String race)
+public class Cochon extends Animal{
+	public Cochon(String nom, int taille, int age, String race)
 	{
 		super(nom, taille, age, race);
 	}

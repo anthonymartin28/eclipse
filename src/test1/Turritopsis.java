@@ -19,7 +19,7 @@ public class Turritopsis extends Animal{
 	
 	public String toString()
 	{
-		return "je suis éternel je fait " + taille + " mm, j'ai " + age + " ans et je suis un " + race +" "+ nom + " " + couleur +  " !";
+		return "je suis éternel je fait " + taille + " mm, j'ai " + age + " ans et je suis un " + race +" "+ nom + " " + couleur +  " .";
 	}
 	
 	public String regen()

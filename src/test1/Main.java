@@ -8,21 +8,24 @@ public class Main {
 		
 		Turritopsis med1 = new Turritopsis("nutriculae",5,500,"Turritopsis","bleue");
 		
+		Cochon pepa = new Cochon("pepa pig",120,10,"pork");
 		
 		Chien médor = new Chien("Médor",195,12,"matin de naple");
 		Chien max = new Chien("max",4,1,"chiwawa");
 		//médor.sePresenter();
 		
 		Etudiant anthony = new Etudiant("MARTIN","Anthony",19,"BTS SIO");
-		Etudiant antony = new Etudiant("LAIGNEAU","Antony",18,"BTS SIO");
+		Etudiant antony = new Etudiant("LAIGNEAU","Antony",19,"BTS SIO");
 		Etudiant nom2 = new Etudiant("DUPOND","George",16,"BTS SIO");
 		
-		anthony.ajoutermed(med1);
 		
-		anthony.ajouterchien(médor);
-		anthony.ajouterchien(max);
 		
-		anthony.retirerchien(0);
+		anthony.addanimal(med1);
+		anthony.addanimal(médor);
+		anthony.addanimal(max);
+		anthony.addanimal(pepa);
+		
+		//anthony.dellanimal(0);
 		
 		anthony.sePresenter();
 		

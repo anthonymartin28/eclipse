@@ -15,6 +15,22 @@ public class Animal {
 		this.race = race;
 	}
 	
+	public void sePresenter()
+	{
+		System.out.println("je suis un animal");
+	}
+	
+	public String toString()
+	{
+		return "je suis un animal";
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	public String getNom() {
 		return nom;
